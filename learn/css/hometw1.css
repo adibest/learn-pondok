@@ -1,0 +1,402 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+body {
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+#container {
+	width: 1260px;
+	margin: auto;
+}
+#header {
+	height: 550px;
+	padding: 0px;
+	background: url('../assets/bg-image.png');
+	background-repeat: no-repeat;
+	background-size: 1260px 550px;
+}
+#transparent {
+	background-color: hsla(0, 0%, 0%, 0.54);
+	height: 28%;
+}
+#lifestyle {
+	width: 30%;
+	float: left;
+	padding: 50px;
+}
+#headside {
+	width: 50%;
+	text-align: right;
+	float: right;
+	padding: 30px;
+}
+#headsearch {
+	padding: 10px;
+}
+#headsearch input {
+	height: 30px;
+	padding-left: 15px;
+	border-radius: 15px;
+	color: #ffffff;
+	font-weight: bold;
+	border: none;
+	background-color: #1F232C;
+	background-image: url('../assets/icon-search.png');
+	background-repeat: no-repeat;
+	background-position: right 10px center;
+}
+#headmenu {
+	height: 40px;
+	padding: 10px;
+}
+#headmenu li{
+	position: relative;
+	display: block;
+	float: right;
+	padding: 10px;
+	padding-right: 20px;
+}
+#headmenu li a {
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+}
+#headmenu li:last-child a{
+	color: #000000;
+}
+#headmenu li:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+#centa {
+	height: 60%;
+	padding-top: 150px;
+	padding-left: 0px;
+}
+#centa p {
+	text-align: center;
+	font-size: 20px;
+}
+#isi {
+	background-color: #FFFFFF;
+	height: 1100px;
+}
+#join {
+	background-color: #E7E7E7;
+	height: 17%;
+	border-bottom: 8px solid #DADADA;
+}
+#desc {
+	padding-top: 40px;
+	padding-left: 20px;
+	width: 55%;
+	float: left;
+}
+#desc p {
+	font-size: 28px;
+	padding: 20px;
+}
+#now {
+	padding-top: 60px;
+	padding-right: 20px;
+	width: 25%;
+	float: right;
+}
+#now input {
+	color: #E2DEDE;
+	font-size: 28px;
+	background-color: #1F232C;
+	border: none;
+	padding: 15px 80px 15px 80px;
+	border-radius: 10px;
+}
+#now input:hover {
+	box-shadow: 0 4px 8px 0 #000000;
+	cursor: pointer;
+}
+.wrapper {
+	width: 95%;
+	margin: auto;
+}
+#service {
+	height: 23%;
+	border-top: 1px solid #ffffff;
+	border-bottom: 2px solid #1F232C;
+}
+.subserv {
+	padding-top: 70px;
+	width: 320px;
+	height: 100px;
+	float: left;
+}
+#subserv1 {
+	padding-left: 0px;
+	padding-right: 56px;
+}
+#subserv2 {
+	padding-left: 56px;
+	padding-right: 56px;
+}
+#subserv3 {
+	padding-left: 56px;
+	padding-right: 0px;
+}
+.imgserv {
+	box-sizing: border-box;
+	width: 100px;
+	float: left;
+}
+.descserv {
+	box-sizing: border-box;
+	width: 200px;
+	float: right;
+}
+.descserv h1 {
+	padding-left: 0px;
+	padding-bottom: 7px;
+}
+.descserv h1 a {
+	text-decoration: none;
+	text-transform: none;
+	color: #000000;
+	padding: 3px;
+	font-size: 22px;
+	border-bottom: 2px solid #1F232C;
+}
+.descserv h1 a:hover {
+	border-bottom: 2px solid #EF454D;
+	color: #EF454D;
+}
+.descserv p {
+	padding-top: 10px;
+	font-size: 12px;
+	color: #979797;
+	line-height: 1.6;
+}
+.innertext {
+	margin-top: 240px;
+	height: 30px;
+	margin-left: 464px;
+	margin-right: 440px;
+	width: 270px;
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	background-color: #ffffff;
+}
+
+#facilis {
+	height: 50%;
+}
+.subfac {
+	background-color: #EEEEEE;
+	padding: 0px;
+	border: none;
+	width: 300px;
+	height:235px;
+	float: left;
+}
+#subfac1 {
+	margin-top: 60px;
+	margin-left: 0px;
+	margin-right: 74px;
+}
+#subfac2 {
+	margin-top: 60px;
+	margin-left: 74px;
+	margin-right: 74px;
+}
+#subfac3 {
+	margin-top: 60px;
+	margin-left: 74px;
+	margin-right: 0px;
+}
+#subfac4 {
+	margin-top: 60px;
+	margin-left: 0px;
+	margin-right: 74px;
+}
+#subfac5 {
+	margin-top: 60px;
+	margin-left: 74px;
+	margin-right: 74px;
+}
+#subfac6 {
+	margin-top: 60px;
+	margin-left: 60px;
+	margin-right: 0px;
+}
+.subfac:hover {
+	box-shadow:0 8px 12px 0 #8F8F8F;
+	cursor: pointer;
+}
+.descfac {
+	width: 300px;
+	height: 50px;
+	text-align: center;
+	padding-top: 15px;
+}
+.descfac p {
+	font-size: 12px;
+	color: #979797;
+	padding-top: 5px;
+}
+#footer {
+	height: 400px;
+}
+#foot {
+	height: 80%;
+	float: top;
+	background-color: #EEEEEE;
+}
+.pengatur {
+	float: left;
+	width: 280px;
+	height: 250px;
+	border: none;
+	padding: 48px 10px 15px 10px;
+	margin: 0px 5px 0px 5px;
+}
+#contact h1 {
+	font-size: 24px;
+	padding-bottom: 20px;
+}
+#contact p {
+	color: #858585;
+	line-height: 1.6;
+}
+#contact #let {
+	padding-bottom: 10px;
+}
+#quick h1 {
+	font-size: 24px;
+	padding-bottom: 20px;
+}
+#quick p {
+	border-bottom: 2px solid #C4C4C4;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#quick p a {
+	text-decoration: none;
+	color: #1F232C;
+}
+#quick p a:hover {
+	color: #EF454D;
+}
+#fromblog h1 {
+	font-size: 24px;
+	padding-bottom: 30px;
+}
+#fromblog h2 {
+	font-weight: bold;
+	padding-bottom: 12px;
+}
+#fromblog h3 {
+	font-size: 12px;
+	padding-bottom: 10px;
+}
+#fromblog p {
+	line-height: 1.6;
+	color: #858585;
+	font-size: 15px;
+}
+#fromblog #kusus {
+	border: none;
+	text-align: right;
+	text-decoration: none;
+	color: #1F232C;
+	padding-top: 20px;
+	font-weight: bold;
+}
+#grabnews h1 {
+	font-size: 24px;
+	padding-bottom: 30px;
+}
+#grabnews p {
+	padding: 0px 20px 20px 0px;
+	float: left;
+}
+#grabnews .insa {
+	padding: 10px 15px;
+	color: #1A1B1D;
+	width: 270px;
+	font-weight: bold;
+	border: none;
+	border-radius: 8px;
+}
+#grabnews #submit {
+	width: 80px;
+	background-color: #1F232C;
+	color: #F5F4F2;
+	border: none;
+	border-radius: 8px;
+	padding: 10px 15px;
+	font-weight: bold;
+}
+#copyright {
+	height: 20%;
+	background-color: #1F232C;
+}
+#kiwa {
+	float: left;
+}
+#tengen {
+	float: right;
+}
+.pgtr {
+	color: #737373;
+	padding: 35px 15px 30px 15px;
+}

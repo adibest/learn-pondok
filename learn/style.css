@@ -1,0 +1,19 @@
+body {
+	background: #5244ef;
+}
+a {
+	color: red;	
+	background: grey;
+	text-decoration: none;
+}
+a:hover {
+	color: purple;
+	text-decoration: underline;
+}
+p {
+	background: yellow;
+}
+p:hover {
+	background: white;
+}
+

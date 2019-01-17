@@ -1,0 +1,350 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+body {
+	padding: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+#kontener {
+	width: 1260px;
+	margin: auto;
+}
+#heder {
+	height: 300px;
+	background-color: #ffffff;
+}
+#hedatas {
+	height: 50%;
+	border-bottom: 4px solid #000000;
+}
+#hedimg {
+	width: 30%;
+	float: left;
+	padding: 50px;
+}
+#hedside {
+	width: 50%;
+	text-align: right;
+	float: right;
+	padding: 30px;
+}
+#hedsrch {
+	padding: 10px;
+}
+#hedsrch input {
+	height: 30px;
+	padding-left: 15px;
+	border-radius: 15px;
+	color: #ffffff;
+	font-weight: bold;
+	border: none;
+	background-color: #1F232C;
+	background-image: url('../assets/icon-search.png');
+	background-repeat: no-repeat;
+	background-position: right 10px center;
+}
+#hedmenu {
+	height: 40px;
+	padding: 10px;
+}
+#hedmenu li {
+	position: relative;
+	display: block;
+	float: right;
+	padding: 10px;
+	padding-right: 20px;
+}
+#hedmenu li a {
+	color: #000000;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+}
+#hedmenu li:first-child a {
+	color: #828282;
+}
+#hedmenu li:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+#kontak {
+	height: 50%;
+	background-color: #F5F5F6;
+}
+#kontak p { 
+	padding-top: 60px;
+	padding-left: 20px;
+	font-size: 28px;
+}
+
+
+#isis {
+	height: 700px;
+	background-color: #ffffff;
+}
+#sg3 a {
+	padding: 0px;
+	margin-top: 0px;
+	margin-left: 40px;
+}
+#sg3 img {
+	width: 20px;
+}
+#isikiri {
+	width: 60%;
+	float: left;
+}
+#desiki {
+	padding-left: 40px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+#desiki p {
+	line-height: 1.6;
+}
+table {
+	margin-left: 60px;
+}
+td a {
+	color: #EF454D;
+	font-size: 15px;
+	vertical-align: top;
+}
+td {
+	padding: 10px;
+}
+.mnbl {
+	vertical-align: top;
+	text-align: right;
+	font-weight: bold;
+	padding-top: 20px;
+}
+.pgtur {
+	background-color: #ffffff;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+	padding-top: 2px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 424px;
+	height: 40px;
+	font-size: 15px;
+}
+#tekarea {
+	background-color: #ffffff;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 15px;
+	width: 424px;
+}
+#subm {
+	color: #e2dede;
+	background-color: #1f232c;
+	border-radius: 5px;
+	border: none;
+	padding: 7px 13px 7px 13px;
+	font-weight: bold;
+	font-size: 15px;
+}
+#subm:hover {
+	cursor: pointer;
+	box-shadow: 0 2px 4px 0 #000000;
+}
+#isikanan {
+	width: 35%;
+	float: right;
+}
+#desika {
+	padding-top: 40px;
+}
+#desika img {
+	width: 15px;
+}
+#desika p {
+	line-height: 1.6;
+}
+#tebel {
+	font-weight: bold;
+}
+#kasihlet {
+	padding-bottom: 20px;
+}
+.luarmap {
+	margin-top: 30px;
+	text-align:right;
+	height: 260px;
+	width: 260px;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	padding: 5px;
+}
+.gmap_canvas {
+	overflow: hidden;
+	background: none!important;
+	height: 260px;
+	width: 260px;
+}
+#futer {
+	height: 400px;
+}
+
+
+#foot {
+	height: 80%;
+	float: top;
+	background-color: #EEEEEE;
+}
+.pengatur {
+	float: left;
+	width: 280px;
+	height: 250px;
+	border: none;
+	padding: 48px 10px 15px 10px;
+	margin: 0px 5px 0px 5px;
+}
+#contact h1 {
+	font-size: 24px;
+	padding-bottom: 20px;
+}
+#contact p {
+	color: #858585;
+	line-height: 1.6;
+}
+#contact #let {
+	padding-bottom: 10px;
+}
+#quick h1 {
+	font-size: 24px;
+	padding-bottom: 20px;
+}
+#quick p {
+	border-bottom: 2px solid #C4C4C4;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+#quick p a {
+	text-decoration: none;
+	color: #1F232C;
+}
+#quick p a:hover {
+	color: #EF454D;
+}
+#fromblog h1 {
+	font-size: 24px;
+	padding-bottom: 30px;
+}
+#fromblog h2 {
+	font-weight: bold;
+	padding-bottom: 12px;
+}
+#fromblog h3 {
+	font-size: 12px;
+	padding-bottom: 10px;
+}
+#fromblog p {
+	line-height: 1.6;
+	color: #858585;
+	font-size: 15px;
+}
+#fromblog #kusus {
+	border: none;
+	text-align: right;
+	text-decoration: none;
+	color: #1F232C;
+	padding-top: 20px;
+	font-weight: bold;
+}
+#grabnews h1 {
+	font-size: 24px;
+	padding-bottom: 30px;
+}
+#grabnews p {
+	padding: 0px 20px 20px 0px;
+	float: left;
+}
+#grabnews .insa {
+	padding: 10px 15px;
+	color: #1A1B1D;
+	width: 270px;
+	font-weight: bold;
+	border: none;
+	border-radius: 8px;
+}
+#grabnews #submit {
+	width: 80px;
+	background-color: #1F232C;
+	color: #F5F4F2;
+	border: none;
+	border-radius: 8px;
+	padding: 10px 15px;
+	font-weight: bold;
+}
+#copyright {
+	height: 20%;
+	background-color: #1F232C;
+}
+#kiwa {
+	float: left;
+}
+#tengen {
+	float: right;
+}
+.pgtr {
+	color: #737373;
+	padding: 35px 15px 30px 15px;
+}

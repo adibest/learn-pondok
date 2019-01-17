@@ -1,0 +1,49 @@
+body {
+	color: #1f232c;
+	line-height: 1.15;
+}
+.container {
+	max-width: 1200px;/*coba ubah ukuran atau hilangkan jadi none*/
+	padding: 0 20px;
+	box-sizing: border-box;
+	margin: auto;
+}
+
+/*header*/
+
+header {
+	background-color: #446cb3;
+}
+header .container {
+	display: flex;
+	justify-content: space-between;
+}
+header ul li {
+	display: inline-block;/*block itu ke bawah, inline ke samping*/
+}
+h2 {
+	font-family: 'Lato', sans-serif;
+}
+header a {
+	color: #ffffff;
+	text-decoration: none;
+	padding: 15px;
+	display: block;
+}
+header .menu-categories i:before, header .menu-shop i:before, .menu-search i:before, header .menu-twitter i:before, header .menu-user i:before {
+	display: none;
+}
+header .menu-home i:before {
+	display: block;
+}
+
+/*responsive*/
+@media only screen and (max-width: 768px) {
+	header .menu-categories i:before, header .menu-shop i:before, {
+		display: inline-block;
+	}
+	header .menu-home i:before {
+		display: none;
+	}
+}
+@media only screen and (max-width: 480px) {}

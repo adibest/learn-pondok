@@ -1,0 +1,12 @@
+membuat tabel siswa, kelas, mata_pelajaran
+
+tabel siswa
+=>id, nama, mapel(int), kelas(int), nilai, status(bool)
+
+kolom mapel dan kelas manggil dari tabel lain
+
+tabel kelas
+=>id(int), name(varchar), status(bool)
+
+tabel mata_pelajaran
+=>id(int), name(varchar), pengajar(varchar), status(bool)

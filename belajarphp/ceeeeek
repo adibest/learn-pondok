@@ -1,0 +1,13 @@
+for ($a=0; $a < 5 ; $a++) { 
+for ($b=5; $b > $a; $b--) { 
+echo "&nbsp;"; 
+} 
+
+for ($c=0; $c < $a; $c++) { 
+echo "*"; 
+} 
+for ($d=0; $d <= $a ; $d++) { 
+echo "*"; 
+} 
+echo "<br>"; 
+} 

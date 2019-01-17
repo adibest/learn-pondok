@@ -1,0 +1,48 @@
+			.kotak {
+				width: 150px;
+				height: 150px;
+				background: aqua;
+				margin-top: 50px;
+			}
+			.kotak:hover {
+				width: 200px;
+				height: 200px;
+				background: #45af65;
+				margin-top: 100px;
+				cursor: pointer;
+			}
+			.t { 
+				font-size: 20px;
+				padding-top: 50px;
+				margin:  auto;
+				color: white;
+			}
+			.kotak1 {
+				border-radius: 50%;
+				width: 150px;
+				height: 150px;
+				background: red;
+				margin-top: 50px;
+			}
+			.kotak1:hover {
+				border-radius: 0%;
+				width: 100px;
+				height: 100px;
+				background: #4554af;
+				margin-top: 100px;
+				cursor: pointer;
+			}
+			.kotak2 {
+				width: 150px;
+				height: 150px;
+				background: blue;
+				margin-top: 50px;
+			}
+			.kotak2:hover {
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				background: magenta;
+				margin-top: 10px;
+				cursor: pointer;
+			}

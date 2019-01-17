@@ -1,0 +1,16 @@
+Cara Impor Database Lewat Terminal
+
+=>sebelumnya cd di folder mana tempat database yg mau di impor
+=>mysql -uroot -p < mysqlsampledatabase.sql;
+
+Relasi : hubungan antar tabel
+	primary key(kunci dari tabelnya sendiri)
+	foreign key(kunci yang asalnya dari tabel lain)
+
+ERD : Entity Relationship Diagram
+Diagram Hubungan Entitas (Kesatuan)
+=>kotak melambangkan tabel
+=>oval melambangkan kolom
+=>belah ketupat melambangkan hubungan
+=>i sedikit
+=>m many, banyak

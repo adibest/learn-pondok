@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Tugas JavaScript in Body Adib</title>
+</head>
+<body>
+
+<h3>Lampu Merah Aja Kutunggu</h3>
+
+<p id="lm">
+Awas dekat lagi ada perempatan, ada lampu lalu lintas! 
+</p>
+<div id="lm"></div>
+<script>
+var jijal = document.getElementBydId("lm");
+jijal.innerHTML= <img src=lampumerah.jpg style.display='block'>;
+</script>
+
+<button type="button" onclick="document.getElementById('lm').innerHTML= 'Lampu merah lur, jangan terobos. Inget nyawa cuma satu!<br><img src=lampumerah.jpg width=300><br>' ">
+Coba Lihat
+</button>
+
+<button type="button" onclick="document.getElementById('lm').innerHTML='Santai lur, masih lampu kuning, jangan ngegas!<br><img src=lampukuning.jpg width=300><br>' ">
+Coba Lihat Lagi
+</button>
+
+<button type="button" onclick="document.getElementById('lm').innerHTML='Silakan gas, hati-hati, keluarga menunggu di rumah<br><img src=lampuhijau.jpg width=300><br>' ">
+Ini nih yang ditunggu
+</button>
+
+<button type="button" onclick="document.getElementById('lm').style.display='none' ">
+Bye-bye lampu merah
+</button>
+
+<button type="button" onclick="document.getElementById('lm').style.display='block' ">
+Coba tengok lagi
+</button>
+
+</body>
+</html>

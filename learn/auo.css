@@ -1,0 +1,19 @@
+		body {
+			font-family: Arial;
+}
+#header {
+	width: 100%;
+	margin: auto;
+}
+#header li {
+	display: block;
+	float: left;
+}
+#header ul li a {
+	display: block;
+	padding: 10px 20px;
+	background-image: linear-gradient(#074B81, #0A7FC6);
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+}

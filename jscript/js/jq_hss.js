@@ -1,0 +1,62 @@
+$(document).ready(function(){
+	$("#hide").click(function(){
+		$(".d1").hide();
+		$(".d2").hide("fast");
+		$(".d3").hide("slow");
+		$(".d4").hide(5000);
+	});
+	$("#show").click(function(){
+		$(".d1").show();
+		$(".d2").show("fast");
+		$(".d3").show("slow");
+		$(".d4").show(5000);
+	});
+	$("#toggle").click(function(){
+		$(".d1").toggle();
+		$(".d2").toggle("fast");
+		$(".d3").toggle("slow");
+		$(".d4").toggle(5000);
+	});
+	$("#fade1").click(function(){
+		$(".f1").fadeOut();
+		$(".f2").fadeOut("fast");
+		$(".f3").fadeOut("slow");
+		$(".f4").fadeOut(5000);
+	});
+	$("#fade2").click(function(){
+		$(".f1").fadeIn();
+		$(".f2").fadeIn("fast");
+		$(".f3").fadeIn("slow");
+		$(".f4").fadeIn(5000);
+	});
+	$("#fade3").click(function(){
+		$(".f1").fadeToggle();
+		$(".f2").fadeToggle("fast");
+		$(".f3").fadeToggle("slow");
+		$(".f4").fadeToggle(5000);
+	});
+	$("#fade4").click(function(){
+		$(".f1").fadeTo(2000, 0.2);
+		$(".f2").fadeTo("fast", 0.3);
+		$(".f3").fadeTo("slow", 0.4);
+		$(".f4").fadeTo(5000, 0.5);
+	});
+	$("#slide1").click(function(){
+		$(".s1").slideUp();
+		$(".s2").slideUp("fast");
+		$(".s3").slideUp("slow");
+		$(".s4").slideUp(5000);
+	});
+	$("#slide2").click(function(){
+		$(".s1").slideDown();
+		$(".s2").slideDown("fast");
+		$(".s3").slideDown("slow");
+		$(".s4").slideDown(5000);
+	});
+	$("#slide3").click(function(){
+		$(".s1").slideToggle();
+		$(".s2").slideToggle("fast");
+		$(".s3").slideToggle("slow");
+		$(".s4").slideToggle(5000);
+	});
+});

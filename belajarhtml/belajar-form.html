@@ -1,0 +1,74 @@
+<html>
+<head>
+	<title>Belajar Form</title>
+</head>
+<body style="font-family:NanumSquare">
+<h3>Form tanpa tabel</h3>
+	<form>
+		<label for="nama">Nama:</label>
+		<input type="text" size="30" name="nama" id="nama"><br>
+		<label for="alamat">Alamat:</label>
+		<input type="text" size="50" name="alamat" id="alamat">
+	</form>
+<h3>Form dengan tabel</h3>
+	<form>
+		<table>
+			<tr>
+				<td><label for="nama">Nama</label></td>
+				<td>:</td>
+				<td><input type="text" size="30" name="nama" id="nama"></td>
+			</tr>
+			<tr>
+				<td><label for="alamat">Alamat</label></td>
+				<td>:</td>
+				<td><input type="text" size="50" name="alamat" id="alamat"></td>
+			</tr>
+		</table>
+	</form>
+<h3>Form label text area</h3>
+	<form>
+		<label for="pesan">Pesan</label><br>
+		<textarea name="pesan" cols="90" rows="5"></textarea>
+	</form>
+<h3>Form label dropdown</h3>
+	<form>
+		<label for="daerah">Daerah :</label>
+			<select name="pulau" id="pulau">
+				<option value="">-- Pilih Pulau --</option>
+				<option value="Jawa">Jawa</option>
+				<option value="Sumatra">Sumatra</option>
+				<option value="Kalimantan">Kalimantan</option>
+				<option value="Sulawesi">Sulawesi</option>
+				<option value="Papua">Papua</option>
+			</select>
+	</form>
+<h3>Form pilihan</h3>
+	<form>
+	Jenis Kelamin :
+		<input type="radio" name="jkl" id="pria" value="Pria"/>
+			<label for="pria">Pria</label>
+		<input type="radio" name="jkl" id="wanita" value="Wanita"/>
+			<label for="wanita">Wanita</label>
+	</form>
+<h3>Form checkboxes</h3>
+	<form>
+	Hobi :
+		<input type="checkbox" name="hobi" id="bacabuku" value="Baca Buku"/>
+			<label for="checkbox">Baca Buku</label>
+		<input type="checkbox" name="hobi" id="olahraga" value="Olah Raga"/>
+			<label for="checkbox">Olah Raga</label>
+		<input type="checkbox" name="hobi" id="maingame" value="Main Game"/>
+			<label for="checkbox">Main Game</label>
+		<input type="checkbox" name="hobi" id="mendaki" value="Mendaki"/>
+			<label for="checkbox">Mendaki</label>
+	</form>
+<h3>Form password, submit, dan reset</h3>
+	<form>
+		<label for="password">Password</label>
+			<input type="password" name="password" id="password"/>
+				</br></br>
+			<input type="submit" name="submit" value="Kirim"/>
+			<input type="reset" name="reset" value="Ulang"/>
+	</form>
+</body>
+</html>

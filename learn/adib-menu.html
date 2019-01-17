@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>Latihan Membuat Menu</title>
+	<style type="text/css">
+		/* http://meyerweb.com/eric/tools/css/reset/ 
+			v2.0 | 20110126
+			License: none (public domain)
+		*/
+
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+		body {
+			line-height: 1;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		blockquote, q {
+			quotes: none;
+		}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: '';
+			content: none;
+		}
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+		body {
+			font-family: Arial;
+		}
+		#header {
+			width: 100%;
+			margin: auto;
+			margin-top: 20px;
+			margin: 20px auto 0;
+		}
+				
+		#header li {
+			display: block;
+			float: left;
+		
+			letter-spacing: 1px;
+		}
+		#header li a {
+			display: block;
+			padding-top: 15px;
+			padding-right:15px;
+			padding-bottom: 40px;
+			padding-left: 40px;
+
+			padding: 15px 40px 15px 40px; /*atas bawah kanan kiri*/
+
+			background-color: #0a628e;
+			background-image: linear-gradient(#2798d1, #0777ae);
+			
+			border: 1px solid #469fca;
+			border-right-color: #18719e;
+
+			text-decoration: none;
+			text-transform: uppercase;
+			color:#ffffff;
+		}
+		#header li a:hover {
+			background-image: linear-gradient(#0777ae, #2798d1);
+		}
+		#header li.active a {
+			background-image: linear-gradient(#0a628e, #1d79a6);
+		}
+		</style>
+</head>
+<body>
+	<div id="header">
+		<ul>
+			<li class="active"><a href="./">Home</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="social.html">Social</a></li>
+		</ul>
+	</div>
+</body>
+</html>

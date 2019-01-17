@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>Header Menu dengan Dropdown</title>
+	<style type="text/css">
+		/* http://meyerweb.com/eric/tools/css/reset/ 
+			v2.0 | 20110126
+			License: none (public domain)
+		*/
+
+		html, body, div, span, applet, object, iframe,
+		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+		a, abbr, acronym, address, big, cite, code,
+		del, dfn, em, img, ins, kbd, q, s, samp,
+		small, strike, strong, sub, sup, tt, var,
+		b, u, i, center,
+		dl, dt, dd, ol, ul, li,
+		fieldset, form, label, legend,
+		table, caption, tbody, tfoot, thead, tr, th, td,
+		article, aside, canvas, details, embed, 
+		figure, figcaption, footer, header, hgroup, 
+		menu, nav, output, ruby, section, summary,
+		time, mark, audio, video {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, 
+		footer, header, hgroup, menu, nav, section {
+			display: block;
+		}
+		body {
+			line-height: 1;
+		}
+		ol, ul {
+			list-style: none;
+		}
+		blockquote, q {
+			quotes: none;
+		}
+		blockquote:before, blockquote:after,
+		q:before, q:after {
+			content: '';
+			content: none;
+		}
+		table {
+			border-collapse: collapse;
+			border-spacing: 0;
+		}
+		body {
+			font-family: Arial;
+		}
+		.header {
+			width: 810px;
+			margin: auto;
+			margin-top: 20px;	
+    	}	
+		.header ul {
+			border-radius: 8px;
+			width: auto;
+			padding: 0px 0px 55px 0px;
+			background-image: linear-gradient(#074B81, #0A7FC6);
+		}
+   	 .header ul li {
+			display: block;
+			float: left;
+			padding: 10px 0px 0px 10px;
+			position: relative;
+		}
+		.header ul li a {
+			margin-top: auto;
+			width: 90px;
+			display: block;
+			padding: 10px 30px 10px 30px;
+
+			text-decoration: none;
+			text-transform: uppercase;
+			text-align: center;
+			color: #ffffff
+		}
+		.header ul li a:hover {
+			border-radius: 8px;
+			background-color: white;
+			color: #074B81;
+		}
+		.header ul li ul {
+			position: absolute;
+			display: none;
+			padding: 5px 5px 5px 5px;
+		}
+		.header ul li:hover ul {
+			display: block;
+		}
+		.header ul li ul li {
+			padding: 0px 0px 0px 0px;
+		}
+		.header ul li ul li a {
+			padding: 10px 35px 10px 10px;
+			text-align: left;
+		}
+		.header ul li.kusus a {
+			background-image: linear-gradient(#ffffff, #ffffff);
+			border-radius: 8px;
+			color: #0967A6;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<ul>
+			<li class="kusus"><a href="./">Home</a></li>
+			<li><a href="about.html">About us</a>
+				<ul>
+					<li><a href="hi.html">History</a></li>
+					<li><a href="ot.html">Our team</a></li>
+					<li><a href="tes.html">Testimonials</a></li>
+				</ul>
+			</li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="solutions.html">Solutions</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+		</ul>
+	</div>
+</body>
+</html>

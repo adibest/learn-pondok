@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Variasi Toggle Adib</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/tugas_jq3adib.js"></script>
+	<style type="text/css">
+		body {
+			box-sizing:  border-box;
+		}
+		button {
+			width: 100px;
+			font-family: 'Open Sans', sans-serif;
+		}
+		#up {width: 650px;}
+		#down {width: 400px;}
+		#up, #down {
+			margin-right: auto;
+			margin-left: auto;
+			font-family: 'Open Sans', sans-serif;
+		}
+		.satu, .dua, .tiga, .empat {
+			width: 120px; height: 120px;margin: 2px;
+		}
+		.satu {background-color: lightblue;}
+		.dua {background-color: lightgreen;}
+		.tiga {background-color: magenta;}
+		.empat {background-color: purple;}
+
+
+	</style>
+</head>
+<body>
+	<div id="up">
+		<table>
+			<tr>
+				<td><!--Sembunyikan-->
+					<button class="hide"><p>Hide</p></button>
+				</td>
+				<td><!--Tampilkan-->
+					<button class="show"><p>Show</p></button>
+				</td>
+				<td>
+					<button class="toggle"><p>Toggle</p></button>
+				</td>
+				<td>
+					<button class="fadetog"><p>Fade Toggle</p></button>
+				</td>
+				<td>
+					<button class="fadeto"><p>Fade To</p></button>
+				</td>
+				<td>
+					<button class="slidetog"><p>Slide Toggle</p></button>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="down">
+		<table>
+			<tr>
+				<td>
+					<div class="satu" id="tu"></div>
+				</td>
+				<td>
+					<div class="satu" id="ua"></div>
+				</td>
+				<td>
+					<div class="satu" id="ga"></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="dua" id="pat"></div>
+				</td>
+				<td>
+					<div class="dua" id="ma"></div>
+				</td>
+				<td>
+					<div class="dua" id="nam"></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="tiga" id="ju"></div>
+				</td>
+				<td>
+					<div class="tiga" id="pan"></div>
+				</td>
+				<td>
+					<div class="tiga" id="lan"></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="empat" id="luh"></div>
+				</td>
+				<td>
+					<div class="empat" id="nol"></div>
+				</td>
+				<td>
+					<div class="empat" id="bin"></div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

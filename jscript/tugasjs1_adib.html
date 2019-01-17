@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tugas Variasi JS - Adib</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/tugas_jq1adib.js"></script>
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 28px; 
+			/*display: flex;*/
+			/*justify-content: space-around;*/
+		}
+		button {
+			padding: 20px;
+			height: 100px;
+			width: 100px;
+			margin: 10px;
+			float: left;
+			border: none;
+			color: #FFFFFF;
+		}
+		p {
+			text-align: center;
+			vertical-align: center;
+			padding: 2%;
+			font-size: 12px;
+			color: #FFFFFF;
+		}
+		.hide {
+			background-color: #6AF473;
+		}
+		.show {
+			background-color: #1BC562;
+		}
+		.changebg {
+			background-color: #3DE253;
+		}
+		.backbg {
+			background-color: #5DEA45;
+		}
+		.addbord {
+			background-color: #4FC893;
+		}
+		.hidebord {
+			background-color: #FD56EA;
+		}
+		table {
+			float: left;
+			margin-left: auto;
+			margin-right: auto;
+			border: none;
+		}
+		.satu {
+			background-color: #AD1234;
+		}
+		.dua {
+			background-color: #EC5678;
+		}
+		.tiga {
+			background-color: #FB9012;
+		}
+		.empat {
+			background-color: #D13456;
+		}
+		#up, #down {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#up {
+			width: 790px;
+			height: 140px;
+		}
+		#down {
+			width: 800px;
+			height: 520px;
+		}
+		#left, #right {
+			width: 380px;
+			height: 500px;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div id="up">
+		<table>
+			<tr>
+				<td><!--Sembunyikan-->
+					<button class="hide"><p>Hide</p></button>
+				</td>
+				<td><!--Tampilkan-->
+					<button class="show"><p>Show</p></button>
+				</td>
+				<td><!--Ubah warna background-->
+					<button class="changebg"><p>Change Color</p></button>
+				</td>
+				<td>
+					<button class="backbg"><p>Re Color</p></button>
+				</td>
+				<td><!--Kasih border-->
+					<button class="addbord"><p>Add Border</p></button>
+				</td>
+				<td>
+					<button class="hidebord"><p>Hide Border</p></button>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="down">
+		<div id="left">
+			<table>
+				<tr>
+					<td>
+						<button class="satu">1</button>
+					</td>
+					<td>
+						<button class="satu">2</button>
+					</td>
+					<td>
+						<button class="satu">3</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button class="dua">4</button>
+					</td>
+					<td>
+						<button class="dua">5</button>
+					</td>
+					<td>
+						<button class="dua">6</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button class="tiga">7</button>
+					</td>
+					<td>
+						<button class="tiga">8</button>
+					</td>
+					<td>
+						<button class="tiga">9</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button class="empat">*</button>
+					</td>
+					<td>
+						<button class="empat">0</button>
+					</td>
+					<td>
+						<button class="empat">#</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+			<div id="right">
+			<table>
+				<tr>
+					<td>
+						<button class="satu">1</button>
+					</td>
+					<td>
+						<button class="satu">2</button>
+					</td>
+					<td>
+						<button class="satu">3</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button class="dua">4</button>
+					</td>
+					<td>
+						<button class="dua">5</button>
+					</td>
+					<td>
+						<button class="dua">6</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button class="tiga">7</button>
+					</td>
+					<td>
+						<button class="tiga">8</button>
+					</td>
+					<td>
+						<button class="tiga">9</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button class="empat">*</button>
+					</td>
+					<td>
+						<button class="empat">0</button>
+					</td>
+					<td>
+						<button class="empat">#</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

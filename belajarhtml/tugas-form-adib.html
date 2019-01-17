@@ -1,0 +1,87 @@
+<html>
+<head>
+	<title>Form Input Biodata</title>
+</head>
+	<body>
+		<table border="2" bordercolor="red">
+			<tr>
+				<td><h3 style="text-align:center;">Form Input Biodata</h3></td>
+			</tr>
+			<tr>
+				<td>
+			<form>
+			<table>
+			<tr>
+				<td><label for="namalengkap">Nama Lengkap</label></td>
+				<td>:</td>
+				<td><input type="text" size="30" name="namalengkap" id="namalengkap" placeholder="masukkan nama"></td>
+			</tr>
+			<tr>
+				<td><label for="tempat">Tempat, Tanggal Lahir</label></td>
+				<td>:</td>
+				<td><input type="text" size="30" name="tempat" id="tempat"></td>
+				<td>,</td>
+				<td><input type="text" size="5" name="tanggal" id="tanggal"></td>
+				<td>/</td>
+				<td><input type="text" size="5" name="bulan" id="bulan"></td>
+				<td>/<td>
+				<td><input type="text" size="12" name="tahun" id="tahun"></td>
+			</tr>
+			<tr>
+				<td><label for="alamat">Alamat</label></td>
+				<td>:</td>
+				<td colspan="10"><textarea name="alamat" id="alamat" style="margin:0;width:590px;height:59px;"></textarea></td>
+			</tr>
+			<tr>
+				<td><label for="nomorhp">No. Telp/HP</label></td>
+				<td>:</td>
+				<td><input type="text" size="30" name="nomorhp" id="nomorhp"></td>
+			</tr>
+			<tr>
+				<td><label for="jkl">Jenis Kelamin</label></td>
+				<td>:</td>
+				<td><input type="radio" name="jkl" id="lelaki" value="Laki-laki"/>
+					<label for="lelaki">Laki-laki</label>
+				<input type="radio" name="jkl" id="perempuan" value="Perempuan"/>
+					<label for="perempuan">Perempuan</label>
+			</tr>
+			<tr>
+				<td><label for="agama">Agama</label></td>
+				<td>:</td>
+				<td>
+			<select name="agama" id="agama">
+				<option value="Islam">Islam</option>
+				<option value="Katholik">Katholik</option>
+				<option value="Kristen">Kristen</option>
+				<option value="Hindu">Hindu</option>
+				<option value="Buddha">Buddha</option>
+				<option value="Konghucu">Konghucu</option>
+			</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="hoby">Hoby</label></td>
+				<td>:</td>
+				<td colspan="10"><input type="checkbox" name="bacabuku" id="bacabuku" value="Baca Buku"/>
+					<label for="bacabuku">Baca Buku</label>
+				<input type="checkbox" name="olahraga" id="olahraga" value="Olah Raga"/>
+					<label for="olahraga">Olah Raga</label>
+				<input type="checkbox" name="maingame" id="maingame" value="Main Game"/>
+					<label for="maingame">Main Game</label>
+				<input type="checkbox" name="hiking" id="hiking" value="Hiking"/>
+					<label for="hiking">Hiking</label>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td><br>				
+				<td><input type="submit" name="submit" value="Submit"/>
+				<input type="reset" name="reset" value="Clear!"/>
+				</td>			
+			</tr>
+		</table>
+			</form>
+			</td>
+			</tr>
+		</table>
+	</body>
+</html>

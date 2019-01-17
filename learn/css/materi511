@@ -1,0 +1,9 @@
+background-image: url(../image/bg-masjid);
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+font-family: 'Roboto', sans-serif;
+
+opacity
+transitions opacity
+
+@mwdiaonly screen and (max-width:767px)
