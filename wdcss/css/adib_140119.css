@@ -150,6 +150,7 @@ body {
 .isi-left {
 	float: left;
 	padding: 20px;
+	display: block;
 	width: 60%;
 }
 .isi-left h1 {
@@ -195,6 +196,7 @@ body {
 .isi-right {
 	float: right;
 	padding: 20px;
+	display: block;
 	width: 38%;
 }
 #b-right {
@@ -245,4 +247,44 @@ body {
 }
 .box-text h2 {
 	font-size: 22px;
+}
+
+/*responsive isi*/
+@media only screen and (max-width: 768px){
+	.isi-left {
+		float: none;
+		width: 100%;
+	}
+	.isi-left #img {
+		width: 550px;
+		height: 215px;
+	}
+	#title h1 {
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.isi-right {
+		display: none;
+	}
+}
+@media only screen and (max-width: 480px){
+	.isi-left h1 {
+		font-size: 200%;
+		padding-left: 10px;
+	}
+	.isi-left h3 {
+		padding-left: 10px;
+	}
+	.isi-left #img {
+		width: 350px;
+		height: 150px;
+		margin-left: 10px;
+	}
+	.isi-left p {
+		padding-left: 10px;
+	}
+	.isi-left button {
+		margin-left: 10px;
+	}
 }
