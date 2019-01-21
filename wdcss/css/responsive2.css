@@ -1,0 +1,127 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+.container {
+	max-width: 1200px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	margin: auto;
+}
+header {
+	background-color: #446cb3;
+}
+header .container {
+	display: flex;
+	justify-content: space-between;
+}
+header ul li {
+	display: inline-block;
+	border-left: 1px solid  #3e63a4;
+}
+header a {
+	color: #ffffff;
+	text-decoration: none;
+	padding: 15px;
+	display: block;
+	border-left: 1px solid #587cbb;
+}
+header li:last-child {
+	border-right: 1px solid #3e63a4;
+}
+header a:hover {
+	color: #eee;
+}
+header i:before {
+	display: none;
+}
+header a span {
+	display: inline-block;
+	margin-left: 5px;
+}
+header .menu-home i:before {
+	display: block;
+}
+
+/*responsive*/
+/*ukuran tab*/
+@media only screen and (max-width: 768px) {
+	header .container {
+		padding: 0px; /*untuk menghilangkan border*/
+	}
+	header .menu-home {
+		display: none;
+	}
+	header .menu-search span, header .menu-right span {
+		display: none; /*menghilangkan text di menu link sesuai classnya*/ 
+	}
+	header .menu-categories, header .menu-categories a {
+		border-left: 0; /*menghilangkan border kiri*/
+	}
+	header .menu-right li:last-child, header .menu-right li:last-child a {
+		border-right: 0; /*menghilangkan border kanan*/ 
+	}
+	header i:before {
+		display: block; /*menampilkan semua ikon*/
+	}
+}
+/*ukuran hp*/
+@media only screen and (max-width: 480px) {
+	header ul li, header a {
+		border-left: 0; /*menghilangkan border*/
+	}
+	header li:last-child, header li:last-child a {
+		border-right: 0; /*menghilangkan border*/
+	}
+	header li a span {
+		display: none; /*menghilangkan text di menu link*/
+	}
+}
