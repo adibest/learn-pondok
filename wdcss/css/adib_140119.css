@@ -88,6 +88,9 @@ header a {
 	padding: 10px;	
 	display: block;
 }
+header li:hover {
+	background-color: #101662;
+}
 header i:before {
 	display: none;
 /*	border: 2px solid #ff0000;*/
@@ -96,8 +99,8 @@ header .menu-home i:before {
 	display: block;
 }
 .menu-home, .menu-user {border-left: 2px solid #3f64a5; border-right: 2px solid #3f64a5;}
-.menu-categories, .menu-shop, .menu-search {border-right: 2px solid #3f64a5;}
-.menu-twitter {border-left: 2px solid #3f64a5;}
+.menu-categories, .menu-shop, .menu-search {border-right: 2px solid #3f64a5;border-left: 2px solid #3f64a5;}
+.menu-twitter {border-left: 2px solid #3f64a5;border-right: 2px solid #3f64a5;}
 
 /*responsive header*/
 @media only screen and (max-width: 768px) {
@@ -169,9 +172,13 @@ body {
 .isi-left #spc, #b-right {
 	color: #2c5eb4;
 }
+/*.gmbr #img {
+	min-width: 100%;
+}*/
 .isi-left #img {
-	width: 650px;
-	height: 275px;
+/*	width: 650px;
+	height: 275px;*/
+	min-width: 90%;
 	border-radius: 10px;
 	margin-top: 10px;
 	margin-left: 20px;
@@ -205,12 +212,16 @@ body {
 .isi-right p {
 	padding-top: 20px;
 	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 .side-box {
 	display: flex;
 	flex-direction: row;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 .box-image {
 	width: 100%
@@ -221,7 +232,7 @@ body {
 	border-radius: 5px;
 }
 .box-text {
-	padding-top: 15px;
+	padding-top: 10px;
 	padding-left: 20px;
 	padding-bottom: 20px;
 	display: inline-flex;
@@ -251,22 +262,22 @@ body {
 
 /*responsive isi*/
 @media only screen and (max-width: 768px){
-	.isi-left {
+	/*.isi-left {
 		float: none;
 		width: 100%;
-	}
-	.isi-left #img {
+	}*/
+/*	.isi-left #img {
 		width: 550px;
 		height: 215px;
-	}
+	}*/
 	#title h1 {
-		width: 300px;
+		width: 260px;
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.isi-right {
+	/*.isi-right {
 		display: none;
-	}
+	}*/
 }
 @media only screen and (max-width: 480px){
 	.isi-left h1 {
@@ -276,15 +287,27 @@ body {
 	.isi-left h3 {
 		padding-left: 10px;
 	}
-	.isi-left #img {
+/*	.isi-left #img {
 		width: 350px;
 		height: 150px;
 		margin-left: 10px;
-	}
+	}*/
 	.isi-left p {
 		padding-left: 10px;
 	}
 	.isi-left button {
 		margin-left: 10px;
 	}
+}
+@media only screen and (max-width: 1185px){
+	#main {
+		display: flex;
+		flex-direction: column;
+	}
+	.isi-left, .isi-right {
+		width: 90%;
+	}
+/*	.isi-left img {
+		width: 100%;
+	}*/
 }
