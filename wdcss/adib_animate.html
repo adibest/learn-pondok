@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animate</title>
+<style type="text/css">
+* {
+  overflow: hidden;
+  margin: 0;
+}
+body {
+  background: #000;
+}
+@keyframes circle {
+	from {
+		transform: scale(0)
+	}
+	to {
+		transform: scale(8)
+	}
+}
+@keyframes circle1 {
+	from {
+		transform: scale(0)
+	}
+	to {
+		transform: scale(8)
+	}
+}
+@keyframes box {
+	from {
+		transform: scale(0)
+	}
+	to {
+		transform: scale(8)
+	}
+}
+@keyframes box1 {
+	from {
+		transform: scale(0)
+	}
+	to {
+		transform: scale(8)
+	}
+}
+@keyframes diamond {
+	from {
+		transform: rotate(45deg) scale(0);
+	}
+	to {
+		transform: rotate(225deg) scale(8);
+	}
+}
+@keyframes diamond1 {
+	from {
+		transform: rotate(-45deg) scale(0);
+	}
+	to {
+		transform: rotate(-225deg) scale(8);
+	}
+}
+.circle {
+  margin: 0 auto;
+  width: 71px;
+  height: 71px;
+  border: 5px solid CadetBlue;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+.circle1 {
+  margin: 0 auto;
+  width: 71px;
+  height: 71px;
+  border: 5px solid #FF5D56;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 60%;
+}
+.box {
+	margin: 0 auto;
+  width: 71px;
+  height: 71px;
+  border: 5px solid #FF79ED;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+.box1 {
+	margin: 0 auto;
+  width: 71px;
+  height: 71px;
+  border: 5px solid #AE3CB2;
+  position: absolute;
+  top: 40%;
+  left: 60%;
+}
+.diamond {
+	margin: 0 auto;
+  width: 71px;
+  height: 71px;
+  border: 5px solid #5ACC3A;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: rotate(-45deg);
+  margin-bottom: 50px;
+}
+.diamond1 {
+	margin: 0 auto;
+  width: 71px;
+  height: 71px;
+  border: 5px solid #FFE35C;
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: rotate(-45deg);
+  margin-bottom: 50px;
+}
+.one {
+  animation: circle 6s infinite linear;
+  transition: border 20ms linear;
+}
+.one:hover {
+	border: 5px solid #ff7b29;
+}
+.two {
+  animation: box 3s infinite linear;
+  transition: border 20ms linear;
+}
+.two:hover {
+	border: 5px solid #dd7b29;
+}
+.three {
+  animation: diamond 2s infinite linear;
+  transition: border 20ms linear;
+}
+.three:hover {
+	border: 5px solid #fff;
+}
+</style>
+</head>
+<body>
+	<div class="circle one"></div>
+	<div class="box two"></div>
+	<div class="diamond three"></div>
+	<div class="circle1 one"></div>
+	<div class="box1 two"></div>
+	<div class="diamond1 three"></div>
+</body>
+</html>

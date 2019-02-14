@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tugas jQuery 5 Adib</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/tugas_jq5adib.js"></script>
+	<style type="text/css">
+		body {font-family: 'Lato', sans-serif; background-image: url('../../../Tugas/24_Jan_2019/jeremy.jpg'); background-repeat: no-repeat; background-size: 100%;}
+		#container {display: flex; justify-content: space-between;}
+		.contain {max-width: 1360px; padding: 0 20px; box-sizing: border-box; margin: auto; max-height: 620px;}
+		#right {width: 15%;}
+		#left {width: 83%;}
+		#left img {width: 150px; display: none;}
+		#left img:hover {cursor: help;}
+		button {padding: 10px; border-radius: 10px; background-color: #35345c; color: #fff; border: none; font-weight: bold; font-size: 15px; margin-bottom: 20px;}
+		button:hover {cursor: pointer; color: #35345c; background-color: #fff;}
+		#i1 {display: none; background-color: #fff; font-weight: bold; color: #35345c; margin-bottom: 20px;}
+		#right {display: none;}
+		#right button {display: flex; flex-direction: row;}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="left">
+			<div class="contain">
+				<button id="w">Welcome!</button>
+				<div id="i1"></div>
+				<div id="img">
+					<img src="../../../Tugas/24_Jan_2019/ufoo.png">
+				</div>
+			</div>
+		</div>
+		<div id="right">
+			<div class="contain">
+				<button id="gb">Gas Bro</button>
+				<button id="ts">Speed Tinggi!</button>
+				<button id="ks">Low Speed</button>
+				<button id="kf">Kamuflase</button>
+				<button id="md">Munculkan Diri</button>
+				<button id="tp">Teleport</button>
+				<button id="stop">Berhenti</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
