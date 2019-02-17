@@ -73,7 +73,7 @@ a {
 	display: flex;
 }
 #header-top li {
-	margin-right: 30px;
+	margin-right: 28px;
 }
 #header-top .email-phone li i {
 	margin-right: 10px;
@@ -84,20 +84,32 @@ a {
 #header-top .socmed-links li:last-child {
 	margin-right: 10px;
 }
+.email-phone a {
+	font-size: 12px;
+}
 #header {
 	background-color: #ffffff;
-	height: 113px;
+	padding: 37px 0;
 }
 #header .container {
 	display: flex;
 	justify-content: space-between;
 }
-#header .container .menu-header {
+#header ul {
 	display: flex;
-	margin-right: 44px;
+}
+#header .menu-header li {
+	margin-top: 13px;
+	margin-right: 43px;
+}
+#header .search li {
+	margin-top: 13px;
+	margin-right: 22px;
+	margin-left: 141px;
 }
 .menu-header a {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
+	font-size: 15px;
 }
