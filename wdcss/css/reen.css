@@ -92,17 +92,12 @@ a {
 	display: flex;
 	justify-content: space-between;
 }
-#header ul {
+#header .container .menu-header {
 	display: flex;
+	margin-right: 44px;
 }
-#header li {
-	margin-right: 30px;
-}
-#header a {
+.menu-header a {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
-}
-#header .container img {
-	padding-top: 37px;
 }
