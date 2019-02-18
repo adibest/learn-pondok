@@ -113,3 +113,6 @@ a {
 	font-weight: bold;
 	font-size: 15px;
 }
+.slides img {
+	width: 100%;
+}
