@@ -63,7 +63,7 @@ a {
 #header-top {
 	background-color: #f5f7fa;
 	border-bottom: 1px solid #e6e9ed;
-	padding: 15px 0;
+/*	padding: 15px 0;*/
 }
 #header-top .container {
 	display: flex;
@@ -73,19 +73,44 @@ a {
 	display: flex;
 }
 #header-top li {
-	margin-right: 28px;
+/*	margin-right: 28px;*/
+	padding: 15px 14px;
 }
 #header-top .email-phone li i {
 	margin-right: 10px;
 }
 #header-top .socmed-links li {
-	margin-right: 20px;
+/*	margin-right: 20px;*/
 }
 #header-top .socmed-links li:last-child {
 	margin-right: 10px;
 }
 .email-phone a {
 	font-size: 12px;
+}
+.email-phone a:hover {
+	color: #38c5aa;
+}
+.socmed-links li:hover a {
+	color: #ffffff;
+}
+.socmed-links li:first-child:hover {
+	background-color: #4668b3;
+}
+.socmed-links li:nth-child(2):hover {
+	background-color: #2fbbed;
+}
+.socmed-links li:nth-child(3):hover {
+	background-color: #e1306c;
+}
+.socmed-links li:nth-child(4):hover {
+	background-color: #d94348;
+}
+.socmed-links li:nth-child(5):hover {
+	background-color: #3079ff;
+}
+.socmed-links li:last-child:hover {
+	background-color: #eb6397;
 }
 #header {
 	background-color: #ffffff;
@@ -99,8 +124,22 @@ a {
 	display: flex;
 }
 #header .menu-header li {
-	margin-top: 13px;
-	margin-right: 43px;
+/*	margin-top: 13px;
+	margin-right: 43px;*/
+	padding: 12px 21px;
+	position: relative;
+}
+#header .menu-header li ul {
+	display: none;
+	position: absolute;
+}
+#header .menu-header li:hover a {
+	color: #00bc9c;
+}
+#header .menu-header li:hover {
+	background-color: #f5f7fa;
+	border: 1px solid #eaecf0;
+	border-radius: 3px;
 }
 #header .search li {
 	margin-top: 13px;
@@ -113,6 +152,7 @@ a {
 	font-weight: bold;
 	font-size: 15px;
 }
+
 .slides img {
 	width: 100%;
 }
