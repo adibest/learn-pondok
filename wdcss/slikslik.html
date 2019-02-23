@@ -6,16 +6,18 @@
 </head>
 <body>
 	<div class="your-class">
-		<div>your content</div>
-		<div>your content</div>
-		<div>your content</div>
+		<div><img src="../../images/slider1.jpg"></div>
+		<div><img src="../../images/slider2.jpg"></div>
+		<div><img src="../../images/slider3.jpg"></div>
 	</div>
 	<script type="text/javascript" src="../jscript/js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="../slick-1.8.1/slick/slick.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('.your-class').slick({
-				setting-name: setting-value
+				infinite: true,
+				slidesToShow: 1,
+				slidesToScroll: 3
 			});
 		});
 	</script>
