@@ -126,6 +126,7 @@ a {
 #header .menu-header li {
 /*	margin-top: 13px;
 	margin-right: 43px;*/
+	display: block;	
 	padding: 12px 21px;
 	position: relative;
 }
@@ -152,7 +153,124 @@ a {
 	font-weight: bold;
 	font-size: 15px;
 }
-
+.flexslider {
+	display: flex;
+}
 .slides img {
 	width: 100%;
+}
+#tagline {
+	background-color: #ffffff;
+	padding: 130px 0;
+	display: flex;
+}
+.main-tag {
+	padding-bottom: 30px;
+}
+.main-tag p:first-child, .main-tag p {
+	color: #506a85;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+.main-tag p:first-child {
+	font-family: Lato;
+	font-size: 44px;
+	padding: 30px;
+	font-weight: bold;
+}
+.main-tag p {
+	font-size: 22px;
+	padding: 9px;
+}
+.box-tag {
+	display: flex;
+	padding-top: 50px;
+}
+.tag {
+	display: flex;
+	justify-content: space-between;
+}
+.tag img {
+	padding: 10px;
+}
+.word-tag {
+	display: flex;
+	flex-direction: column;
+	width: 290px;
+}
+.word-tag p:first-child, .word-tag p {
+	color: #506a85;
+	text-align: left;
+}
+.word-tag p:first-child {
+	font-family: Lato;
+	font-size: 26px;
+	text-align: left;
+	font-weight: bold;
+	padding: 10px;
+}
+.word-tag p {
+	font-size: 16px;
+	padding: 10px;
+	line-height: 1.5;
+}
+#isi-atas {
+	background-color: #f2f5f7;
+	padding: 130px 0;
+}
+.check-out p:first-child, .check-out p {
+	color: #506a85;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+.check-out p:first-child {
+	font-family: Lato;
+	font-size: 44px;
+	padding: 20px;
+	padding-bottom: 30px;
+	font-weight: bold;
+}
+.check-out {
+	padding-bottom: 60px;
+}
+.check-out p {
+	font-size: 22px;
+	padding: 9px;
+}
+#isi-atas .latest {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+.works {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+.word-works {
+	background-color: #ffffff;
+	width: 100%;
+	padding: 35px 0;
+	color: #506a85;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+.word-works p:first-child {
+	font-family: Lato;
+	font-size: 20px;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+.word-works p {
+	font-size: 14px;
+}
+.astor {
+	display: flex;
+	flex-direction: row;
+}
+.astor img {
+	padding: 10px;
 }

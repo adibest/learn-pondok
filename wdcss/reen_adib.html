@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title></title>
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/reen.css">
 	<link rel="stylesheet" href="localhost/adibi/woocommerce-FlexSlider-53570ee/flexslider.css" type="text/css">
 	<link rel="stylesheet" type="text/css" href="../slick-1.8.1/slick/slick.css"/>
@@ -32,13 +33,13 @@
 			<img src="../../images/logo.png">
 			<ul class="menu-header">
 				<li><a href="#">home</a></li>
-					<ul>
+					<!-- <ul>
 						<li><a href="#">agency style</a></li>
 						<li><a href="#">product style</a></li>
 						<li><a href="#">service style</a></li>
 						<li><a href="#">portfolio style</a></li>
 						<li><a href="#">showcase style</a></li>
-					</ul>
+					</ul> -->
 				<li><a href="#">portfolio</a></li>
 				<li><a href="#">blog</a></li>
 				<li><a href="#">pages</a></li>
@@ -75,6 +76,80 @@
 		<div class="silder2"><img src="../../images/slider2.jpg"></div>
 		<div class="slider3"><img src="../../images/slider3.jpg"></div>
 	</div> -->
+	<div id="tagline">
+		<div class="container">
+			<div class="main-tag">
+				<p>Beautiful. Clean. Responsive.</p>
+				<p>REEN is a high-quality solution for those who want a beautiful website in no time</p>
+				<p>It's fully responsive and will adapt itself into any mobile device. iPad, iPhone, Android,</p>
+				<p>it doesn't matter. Your content will always looks its ansolute best.</p>
+			</div>
+			<div class="box-tag">
+				<div class="tag">
+					<div>
+						<img src="../../images/icon-heart-empty-1.png">
+					</div>
+					<div class="word-tag">
+						<p>Passion</p>
+						<p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
+					</div>
+				</div>
+				<div class="tag">
+					<div>
+						<img src="../../images/icon-lamp.png">
+					</div>
+					<div class="word-tag">
+						<p>Creativity</p>
+						<p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
+					</div>
+				</div>
+				<div class="tag">
+					<div>
+						<img src="../../images/icon-star-empty-1.png">
+					</div>
+					<div class="word-tag">
+						<p>Quality</p>
+						<p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="isi-atas">
+		<div class="container">
+			<div class="check-out">
+				<p>Check out our latest works</p>
+				<p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor.</p>
+			</div>
+			<div class="latest">
+				<div class="works">
+					<div>
+						<img src="../../images/lates-work1.jpg">
+					</div>
+					<div class="word-works">
+						<p>Grands Motel gets an identity brushup</p>
+						<p>identity</p>
+					</div>
+				</div>
+				<div class="works">
+					<div>
+						<img src="../../images/latest-work2.jpg">
+					</div>
+					<div class="word-works">
+						<p>Fresh branding for a creative startup</p>
+						<p>identity</p>
+					</div>
+				</div>
+			</div>
+			<div class="astor">
+				<img src="../../images/carousel1.jpg">
+				<img src="../../images/carousel2.jpg">
+				<img src="../../images/carousel3.jpg">
+				<img src="../../images/carousel4.jpg">
+			</div>
+		</div>
+	</div>
 
 
 	<script type="text/javascript" src="../jscript/js/jquery-3.3.1.min.js"></script>
@@ -84,6 +159,10 @@
 	<script type="text/javascript" charset="utf-8">
 		$(document).ready(function() {
 			$('.flexslider').flexslider({
+				controlNav: true,
+				directionNav: true,
+				prevText: "Previous",
+				nextText: "Next", 
 				animationLoop: true,
 				slideshowSpeed: 7000
 			});
