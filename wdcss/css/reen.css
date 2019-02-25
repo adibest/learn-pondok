@@ -274,3 +274,34 @@ a {
 .astor img {
 	padding: 10px;
 }
+
+.image {
+	width: 100%;
+}
+#slider ul.slides > li {
+	position: relative;
+}
+#slider .slide-text {
+	position: absolute;
+	width: 80%;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #a3a1bf;
+	font-size: 24px;
+}
+#slider .slide-text h1 {
+	font-family: 'Lato';
+	font-weight: 700;
+	font-size: 78px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+#slider .slide-text .btn {
+	font-size: 
+}
+#slider .slider-image {
+	position: relative;
+}
