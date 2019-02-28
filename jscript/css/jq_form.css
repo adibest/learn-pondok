@@ -83,6 +83,9 @@ span {
 	border-radius: 5px;
 	background-color: #336b87;
 }
+.addPassenger:hover, .removePassenger:hover {
+	cursor: pointer;
+}
 .removePassenger {
 	padding: 5px;
 	border-radius: 5px;
