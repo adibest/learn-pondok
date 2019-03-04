@@ -1,0 +1,121 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	margin: auto;
+}
+header {
+	background-color: #dedede;
+	height: 175px;
+}
+header .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+header ul li {
+	display: inline-block;
+	align-items: center;
+}
+a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	color: #114551;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+i {
+	color: #114551;
+}
+a:hover {
+	color: #32c293;
+}
+img {
+	width: 150px;
+	padding: 30px 0;
+}
+.menu {
+	transform: translateY(-400%);
+	/*transform: translateY(-50%);*/
+}
+.k1 {
+	padding-right: 40px;
+}
+.k2 {
+	padding-left: 40px;
+}
+.k4 {
+	display: none;
+}
+
+/*ukuran tab*/
+@media only screen and (max-width: 768px) {
+	header .container {
+	}
+	.k3 {
+		float: left;
+	}
+	.k1 {
+		float: right;
+	}
+}
+
+/*ukuran mobile*/
+@media only screen and (max-width: 480px) {
+	.k4 {
+		display: block;
+		float: right;
+	}
+}
