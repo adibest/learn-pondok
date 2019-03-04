@@ -48,9 +48,17 @@ $(document).ready(function() {
     if (password.length < 8) {
       $('#password').after('<span class="error">Password must be at least 8 characters long</span>');
     }
-    if (kon_password !== password) {
-      $('#kon_pass').after('<span class="error">Password harus sama dengan atasnya</span>');
-    }
+    // if (kon_password !== password) {
+    //   $('#kon_pass').after('<span class="error">Password harus sama dengan atasnya</span>');
+    //   return false;
+    // }
+    // return true;
+
+    // if (password != kon_password) {
+    //                 alert("Passwords do not match.");
+    //                 return false;
+    //             }
+    //             return true;
 
     var error = 0;
     if (!($('#setuju').is(':checked'))) {
@@ -76,5 +84,13 @@ $(document).ready(function() {
     var nama_belakang = $('#nama_belakang').val();
     $('#username').val(nama_depan+"_"+nama_belakang);
   });
+
+  $('#submit').click(function() {
+      var pass = $('#password').val();
+      var pass2 = $('#kon_pass').val();            
+      if (pass != pass2) {        
+        alert("password tidak sama!");
+      }
+    });
  
 });
