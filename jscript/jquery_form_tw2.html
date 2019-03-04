@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adib jQuery Form TW2</title>
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/jq_form2_adib.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<form id="form_" action="" method="POST">
+		<div>
+			<div class="label">Nama Depan</div>
+			<div class="input rows"><input type="text" id="nama_depan" name="nama_depan"></div>
+		</div>
+		<div>
+			<div class="label">Nama Belakang</div>
+			<div class="input rows"><input type="text" id="nama_belakang" name="nama_belakang"></div>
+		</div>
+		<div>
+			<div class="label naleng">Nama Lengkap</div>
+			<div class="input rows"><input type="text" id="nama_lengkap" name="nama_lengkap"></div>
+		</div>
+		<div>
+			<div class="label">Username</div>
+			<div class="input rows"><input type="text" id="username" name="username"></div>
+		</div>
+		<div>
+			<div class="label">Jenis Kelamin</div>
+			<div class="input">
+				<input type="checkbox" id="jk" name="jk" value="1">Laki-laki
+				<input type="checkbox" id="jk" name="jk" value="0">Perempuan 
+				<!-- <select id="jk" name="jk">
+					<option value="1">Laki-laki</option>
+					<option value="0">Perempuan</option>
+				</select> -->
+			</div>
+		</div>
+		<div>
+			<div class="label">Email</div>
+			<div class="input rows"><input type="email" id="email" name="email"></div>
+		</div>
+		<div>
+			<div class="label">Password</div>
+			<div class="input rows"><input type="password" id="password" name="password"></div>
+		</div>
+		<div>
+			<div class="label">Konfirmasi Password</div>
+			<div class="input rows"><input type="password" id="kon_pass" name="kon_pass"></div>
+		</div>
+		<div>
+			<div class="label">Alamat Website</div>
+			<div class="input rows"><input type="text" id="website" name="website"></div>
+		</div>
+		<div>
+			<div class="label">Minat</div>
+			<div class="input">
+				<select id="minat" name="minat" multiple>
+					<option value="1">Manager</option>
+					<option value="2">Staff</option>
+					<option value="3">Supervisor</option>
+					<option value="4">Direktur</option>
+				</select>
+			</div>
+		</div>
+		<div>
+			<div class="label">Pesan</div>
+			<div class="input"><textarea id="pesan" name="pesan" rows="5" cols="40"></textarea></div>
+		</div>
+		<div>
+			<div class="label"></div>
+			<div class="input"><label for="setuju">Setuju?</label><input type="checkbox" id="setuju" name="setuju" value="1"></div>
+		</div>
+		<div>
+			<div class="label"></div>
+			<div class="input"><input type="submit" name="submit" value="KIRIM"></div>
+		</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="js/jq_form_tw2.js"></script>
+</body>
+</html>

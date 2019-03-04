@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex, nofollow">
+	<title>Adib jQuery CKEditor TW2</title>
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+<!-- 	<script src="https://cdn.ckeditor.com/4.11.3/standard-all/ckeditor.js"></script> -->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="../ckeditor/config.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jq_form2_adib.css">
+</head>
+<body>
+	<div class="container">
+	<form id="form_" action="" method="POST">
+		<div>
+			<div class="label">Nama</div>
+			<div class="input rows"><input type="text" id="nama_depan" name="nama_depan"></div>
+		</div>
+		<div>
+			<div class="label">Email</div>
+			<div class="input rows"><input type="email" id="email" name="email"></div>
+		</div>
+		<div>
+			<div class="label">Pesan</div>
+	        <div class="input"><textarea id="editor1" name="editor1" class="editor1" rows="10" cols="80">
+	            
+	        </textarea></div>
+	    </div>
+	    <div>
+			<div class="label">Pesan2</div>
+	        <div class="input"><textarea id="editor2" name="editor2" class="editor2" rows="10" cols="80">
+	            
+	        </textarea></div>
+	        <!-- <textarea id="editor3"></textarea>
+	        <div id="result"></div> -->
+	    </div>
+	    <div>
+			<div class="label"></div>
+			<div class="input"><input type="submit" name="submit" value="KIRIM"></div>
+		</div>
+    </form>
+	    <div id="introduction">
+			<h1>Ini sebuah inline editor </h1>
+
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</div>
+	</div>
+	
+	<script>
+        // Replace the <textarea id="editor1"> with a CKEditor
+        // instance, using default configuration.
+        CKEDITOR.replace( 'editor1' );
+        CKEDITOR.replace( 'editor2', {
+        	uiColor: '#CCEAEE'
+        });
+    </script>
+    <script>
+
+	    // The inline editor should be enabled on an element with "contenteditable" attribute set to "true".
+	    // Otherwise CKEditor will start in read-only mode.
+	    var introduction = document.getElementById('introduction');
+	    introduction.setAttribute('contenteditable', true);
+
+	    CKEDITOR.inline('introduction', {
+	      // Allow some non-standard markup that we used in the introduction.
+	      extraAllowedContent: 'a(documentation);abbr[title];code',
+	      removePlugins: 'stylescombo',
+	      extraPlugins: 'sourcedialog',
+	      // Show toolbar on startup (optional).
+	      startupFocus: false
+	  });
+	</script>
+	<!-- <script type="text/javascript" src="../ckeditor/config.js"></script> -->
+	<script type="text/javascript" src="js/jq_ckeditor_tw2.js"></script>
+	<!-- <script type="text/javascript">
+		function wordCount( val ){
+			var wom = val.match(/\S+/g);
+			return {
+				charactersNoSpaces : val.replace(/\s+/g, '').length,
+				characters         : val.length,
+				words              : wom ? wom.length : 0,
+				lines              : val.split(/\r*\n/).length
+			};
+		}
+
+
+		var textarea = document.getElementById("editor3");
+		var result   = document.getElementById("result");
+
+		textarea.addEventListener("input", function(){
+			var v = wordCount( this.value );
+			result.innerHTML = (
+				"<br>Characters (no spaces):  "+ v.charactersNoSpaces +
+				"<br>Characters (and spaces): "+ v.characters +
+				"<br>Words: "+ v.words +
+				"<br>Lines: "+ v.lines
+				);
+		}, false);
+	</script> -->
+</body>
+</html>
