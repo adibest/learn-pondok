@@ -27,10 +27,10 @@
 			<div class="input rows"><input type="text" id="username" name="username"></div>
 		</div>
 		<div>
-			<div class="label">Jenis Kelamin</div>
+			<div class="label wawa">Jenis Kelamin</div>
 			<div class="input">
-				<input type="checkbox" id="jk" name="jk" value="1">Laki-laki
-				<input type="checkbox" id="jk" name="jk" value="0">Perempuan 
+				<input type="radio" id="jk" name="jk" value="1">Laki-laki
+				<input type="radio" id="jk" name="jk" value="0">Perempuan 
 				<!-- <select id="jk" name="jk">
 					<option value="1">Laki-laki</option>
 					<option value="0">Perempuan</option>
@@ -56,7 +56,7 @@
 		<div>
 			<div class="label">Minat</div>
 			<div class="input">
-				<select id="minat" name="minat" multiple>
+				<select id="minat" name="minat" minlength="2" multiple>
 					<option value="1">Manager</option>
 					<option value="2">Staff</option>
 					<option value="3">Supervisor</option>
