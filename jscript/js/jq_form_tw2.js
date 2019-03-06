@@ -8,7 +8,7 @@ $(document).ready(function() {
     var username = $('#username').val();
     var email = $('#email').val();
     var password = $('#password').val();
-    var kon_password = $('#kon_password').val();
+    var kon_password = $('#kon_pass').val();
     var website = $('#website').val();
     var pesan = $('#pesan').val();
     var setuju = $('#setuju').val();
@@ -45,9 +45,12 @@ $(document).ready(function() {
       //   $('#email').after('<span class="error">Enter a valid email</span>');
       // }
     }
-    if (password.length < 8) {
-      $('#password').after('<span class="error">Password must be at least 8 characters long</span>');
+    if (password.length < 5) {
+      $('#password').after('<span class="error">Password must be at least 5 characters long</span>');
     }
+    if (kon_password !== password) {        
+        alert("password tidak sama!");
+      }
     // if (kon_password !== password) {
     //   $('#kon_pass').after('<span class="error">Password harus sama dengan atasnya</span>');
     //   return false;
@@ -85,12 +88,12 @@ $(document).ready(function() {
     $('#username').val(nama_depan+"_"+nama_belakang);
   });
 
-  $('#submit').click(function() {
-      var pass = $('#password').val();
-      var pass2 = $('#kon_pass').val();            
-      if (pass != pass2) {        
-        alert("password tidak sama!");
-      }
-    });
+  // $('#submit').click(function() {
+  //     var pass = $('#password').val();
+  //     var pass2 = $('#kon_pass').val();            
+  //     if (pass != pass2) {        
+  //       alert("password tidak sama!");
+  //     }
+  //   });
  
 });
