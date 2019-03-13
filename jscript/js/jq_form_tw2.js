@@ -19,18 +19,23 @@ $(document).ready(function() {
     if (nama_depan.length < 1) {
       $('#nama_depan').after('<span class="error"> Harap diisi!</span>');
     }
+
     if (nama_belakang.length < 1) {
       $('#nama_belakang').after('<span class="error"> Harap diisi!</span>');
     }
+
     if (nama_lengkap.length < 1) {
       $('#nama_lengkap').after('<span class="error"> Harap diisi!</span>');
     }
+
     if (username.length < 1) {
       $('#username').after('<span class="error"> Harap diisi!</span>');
     }
+
     if (website.length < 1) {
       $('#website').after('<span class="error"> Harap diisi!</span>');
     }
+
     if (minat.length < 2) {
       $('#minat').after('<span class="error"> Harap pilih minimal 2!</span>');
     }
@@ -53,15 +58,19 @@ $(document).ready(function() {
     if (pesan.length < 1) {
       $('#pesan').after('<span class="error"> Harap diisi!</span>');
     }
+
     if (password.length < 1) {
       $('#password').after('<span class="error"> Harap diisi!</span>');
     }
+
     if (kon_password.length < 1) {
       $('#kon_pass').after('<span class="error"> Harap diisi!</span>');
     }
+
     if (setuju.length < 1) {
       $('#setuju').after('<span class="error"> Harap diisi!</span>');
     }
+
     if (email.length < 1) {
       $('#email').after('<span class="error"> Harap diisi!</span>');
     } else {
@@ -71,12 +80,14 @@ $(document).ready(function() {
       //   $('#email').after('<span class="error">Enter a valid email</span>');
       // }
     }
+
     if (password.length < 5) {
       $('#password').after('<span class="error"> Panjang karakter password minimal 5!</span>');
     }
+    
     if (kon_password !== password) {
-      // $('#kon_pass').after('<span class="error"> Password tidak sama!</span>');       
-        alert("password tidak sama!");
+      $('#kon_pass').after('<span class="error"> Password tidak sama!</span>');       
+        // alert("password tidak sama!");
       }
     // if (kon_password !== password) {
     //   $('#kon_pass').after('<span class="error">Password harus sama dengan atasnya</span>');
