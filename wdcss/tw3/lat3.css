@@ -1,0 +1,45 @@
+.bg-purple {
+   background-color: #563d7c;
+}
+.bg-active {
+	background-color: #463265;
+}
+.navbar {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.nav-item {
+	padding: 0 21px;
+}
+.header-bottom {
+	background-color: #fafafa;
+	border-top: 2px solid #e6e6e6;
+	border-bottom: 2px solid #e6e6e6;
+}
+.header-bottom p {
+	margin-top: 21px;
+	margin-bottom: 21px;
+}
+.blue-text {
+	color: #428bca;
+}
+.text-title {
+	color: #563d7c;
+}
+.header {
+	padding: 60px 0;
+}
+.logo {
+	padding-right: 110px;
+}
+.row {
+	margin-top: 30px;
+}
+.content-first {
+	margin-bottom: 85px;
+}
+.textron {
+	background-color: #f0f7fd;
+	padding: 10px;
+	border-left: 3px solid #cfe3f2;
+}
