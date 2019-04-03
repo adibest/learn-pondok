@@ -20,7 +20,7 @@
 	  <!-- Links -->
 	  <ul class="navbar-nav">
 	    <li class="nav-item logo">
-	      <a class="nav-link font-weight-bold" href="#">LOGO</a>
+	      <a class="nav-link font-weight-bold text-white" href="#">LOGO</a>
 	    </li>
 	    <li class="nav-item active bg-active">
 	      <a class="nav-link" href="#">Getting Started</a>
@@ -39,23 +39,22 @@
 	    </li>
 	  </ul>
 	  	</div>
-
 	</nav>
 
 	<div class="container">
 		<header class="header">
-			<h1 class="text-title display-3 font-weight-bold">Getting started</h1>
-			<p>An overview of Bootstrap, how to download and use, basic template and examples, and more</p>
+			<h1 class="col text-title display-3 font-weight-bold">Getting started</h1>
+			<h4 class="col col-sm-10">An overview of Bootstrap, how to download and use, basic template and examples, and more</h4>
 		</header>
 	</div>
 	<div class="header-bottom">
-		<p class="container"><span class="blue-text">Looking for Bootstrap 2.3.2 docs?</span> We've moved it to a new home while we push forward with Bootstrap 3. <span class="blue-text">Read the blog</span> for details.</p>
+		<p class="container"><strong class="blue-text">Looking for Bootstrap 2.3.2 docs?</strong> We've moved it to a new home while we push forward with Bootstrap 3. <span class="blue-text">Read the blog</span> for details.</p>
 	</div>
 
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-4">
-				<nav class="navbar bg-light">
+			<div class="col-sm-3">
+				<nav class="navbar bg-light sideleft">
 
 				  <!-- Links -->
 				  <ul class="navbar-nav">
@@ -87,14 +86,14 @@
 
 				</nav>
 			</div>
-			<div class="col-sm-8">
+			<div class="col-sm-9">
 				<div class="content-first">
 					<h1>Download Bootstrap</h1>
 					<hr>
 					<p>There are a few easy ways to quickly get started with Bootstrap, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.</p>
-					<h5>Download compiled CSS and JS</h5>
+					<h3>Download compiled CSS and JS</h3>
 					<p>The fastest way to get started is to get the compiled and minified versions of our CSS and JavaScript. No documentation or original source files are included.</p>
-					<a href="#" class="btn btn-primary btn-lg">Download Bootstrap</a>
+					<a href="#" class="btn btn-primary btn-lg font-weight-bold">Download Bootstrap</a>
 				</div>
 				<div>
 					<h1>Customizing Bootstrap</h1>
@@ -109,14 +108,24 @@
 			</div>
 		</div>
 	</div>
+	<hr class="break">
 
-	<footer>
-		<div>
-			<p>Designed and built with all the love in the world by @mdo and @fat.</p>
-			<p>Code licensed under Apache License v2.0, documentation under CC BY 3.0.</p>
-			<p>Blog  ·  Issues  ·  Releases</p>
-		</div>
-	</footer>
+	<div class="container-fluid">
+		<footer class="row">
+			<div class="col-sm-9 offset-sm-3">
+				<div class="text-center">Designed and built with all the love in the world by <span class="blue-text">@mdo</span> and <span class="blue-text">@fat.</span></div>
+				<div class="text-center">Code licensed under <span class="blue-text">Apache License v2.0</span>, documentation under <span class="blue-text">CC BY 3.0.</span></div>
+				<p class="text-center"><span class="blue-text">Blog</span>  ·  <span class="blue-text">Issues</span>  ·  <span class="blue-text">Releases</span>
+					<span>
+						<div class="text-right">
+							<button class="btn btn-secondary pull-right font-weight-bold">Back to top</button>
+						</div>
+					</span>
+				</p>
+			</div>
+		</footer>
+	</div>
+	
 
 
     <!-- Optional JavaScript -->

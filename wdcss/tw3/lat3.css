@@ -9,7 +9,7 @@
 	padding-bottom: 0px;
 }
 .nav-item {
-	padding: 0 21px;
+	padding: 10px 18px;
 }
 .nav-item .logo {
 	padding-left: 0px;
@@ -36,6 +36,9 @@
 	padding-right: 110px;
 	padding-left: 0px;
 }
+.text-white {
+	color: #fff;
+}
 .row {
 	margin-top: 30px;
 }
@@ -44,6 +47,18 @@
 }
 .textron {
 	background-color: #f0f7fd;
-	padding: 10px;
-	border-left: 3px solid #cfe3f2;
+	padding: 15px;
+	border-left: 5px solid #cfe3f2;
+}
+.sideleft {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-radius: 10px;
+}
+.break {
+	margin-top: 115px;
+	margin-bottom: 70px;
+}
+.header .col {
+	padding-left: 0px;
 }
