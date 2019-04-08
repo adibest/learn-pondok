@@ -1,8 +1,76 @@
-.navbar-main{
+/*css for header nav*/
+.bg-dark {
+	background-color: #563D7C!important;
+}
+.bg-active {
+	background-color: #463265;
+}
+.navbar-main {
 	flex-grow: 1;
 }
+.navbar {
+	padding: 0px 0px;
+}
+.navbar-brand {
+	padding-right: 110px;
+	font-weight: bold;
+}
+.nav-item {
+	padding: 10px 10px;
+}
+
+/*css for jumbotron*/
+.jumbotron {
+	background-color: #ffffff;
+}
+.jumbotron-fluid {
+	padding: 60px 0;
+	margin-bottom: 0px;
+}
+.display-4 {
+	color: #563D7C;
+	font-weight: bold;
+}
+
+/*css for looking for bootstrap*/
+.header {
+	margin-bottom: 30px;
+}
+.header p {
+	margin: 20px 0;
+}
+.blue-text {
+	color: #428bca;
+}
+
+/*tulisan back to top*/
 .back-to-top {
 	position: fixed;
 	bottom: 10px;
 	right: 10px;
+}
+
+/*css for left-side*/
+.left-side {
+	padding: 10px 10px;
+	background-color: #f7f5fa;
+}
+.nav-item {
+	padding: 3px 3px;
+}
+.nav-item ul {
+	list-style: none;
+	padding-left: 0px;
+}
+.nav-item ul .border-right {
+	border-right-color: #563d7c!important;
+}
+.nav-item ul li .active {
+	color: #563d7c;
+}
+
+/*css for right-side*/
+.content-first hr {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
 }
