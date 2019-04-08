@@ -36,6 +36,10 @@ body {
 .blue-text {
 	color: #428bca;
 }
+.btn-blue {
+	background-color: #428bca;
+	color: #ffffff;
+}
 .text-title {
 	color: #563d7c;
 }
