@@ -54,6 +54,7 @@
 .left-side {
 	padding: 10px 10px;
 	background-color: #f7f5fa;
+	padding-right: 0px;
 }
 .nav-item {
 	padding: 0px 0px;
@@ -86,6 +87,9 @@
 }
 .content-two h1 {
 	margin-top: 90px;
+}
+.content-first .btn-primary {
+	background-color: #428bca!important;
 }
 .border-left {
 	padding: 18px;
