@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- My CSS -->
     <link rel="stylesheet" type="text/css" href="bot2.css">
 
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
     <title>Tugas Bootstrap 2</title>
   </head>
@@ -45,30 +45,32 @@
           </ul>
           <ul class="navbar-nav navbar-account">
             <li class="nav-item">
-              <a class="nav-link text-right" href="#" data-toggle="modal" data-target="#exampleModal2"><i class="fas fa-user"></i> Sign Up</a>
+              <a class="nav-link text-right" data-toggle="modal" id="signup"><i class="fas fa-user"></i> Sign Up</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-right" href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-sign-in-alt"></i> Login</a>
+              <a class="nav-link text-right" data-toggle="modal" id="signin"><i class="fas fa-sign-in-alt"></i> Login</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+
+
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal" tabindex="-1" role="dialog" aria-labelledby="title" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Access</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <h5 class="modal-title" id="title">Access</h5>
+            <button type="button" class="close tutup" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Login</a>
+                <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Login</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Registration</a>
@@ -94,7 +96,7 @@
               <div class="modal-footer">
                 <a href="#" class="text-primary font-weight-bold">Click here if you forgot your Password!</a>
                 <button type="button" class="btn btn-sm btn-primary border border-light">Login</button>
-                <button type="button" class="btn btn-sm btn-light border border-dark" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-sm btn-light border border-dark tutup" data-dismiss="modal">Close</button>
               </div>
             </div>
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -126,86 +128,7 @@
               </form>
               <div class="modal-footer">
                 <button type="button" class="btn btn-sm btn-primary border border-light">Submit</button>
-                <button type="button" class="btn btn-sm btn-light border border-dark" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 2 -->
-    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Access</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Registration</a>
-              </li>
-            </ul>
-          </div>
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
-              <form>
-                <div class="form-group row">
-                  <label for="inputEmail3" class="col-sm-4 col-form-label text-right">Username</label>
-                  <div class="col-sm-6">
-                    <input type="text" class="form-control" id="inputEmail3">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="inputPassword3" class="col-sm-4 col-form-label text-right">Password</label>
-                  <div class="col-sm-6">
-                    <input type="password" class="form-control" id="inputPassword3">
-                  </div>
-                </div>
-              </form>
-              <div class="modal-footer">
-                <a href="#" class="text-primary font-weight-bold">Click here if you forgot your Password!</a>
-                <button type="button" class="btn btn-sm btn-primary border border-light">Login</button>
-                <button type="button" class="btn btn-sm btn-light border border-dark" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-            <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-              <form>
-                <div class="form-group row">
-                  <label for="inputEmail3" class="col-sm-4 text-right col-form-label">Username</label>
-                  <div class="col-sm-6">
-                    <input type="text" class="form-control" id="inputEmail3">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="inputEmail3" class="col-sm-4 text-right col-form-label">Email</label>
-                  <div class="col-sm-6">
-                    <input type="email" class="form-control" id="inputEmail3">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="inputPassword3" class="col-sm-4 text-right col-form-label">Password</label>
-                  <div class="col-sm-6">
-                    <input type="password" class="form-control" id="inputPassword3">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="inputPassword3" class="col-sm-4 text-right col-form-label">Password(again)</label>
-                  <div class="col-sm-6">
-                    <input type="password" class="form-control" id="inputPassword3">
-                  </div>
-                </div>
-              </form>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-sm btn-primary border border-light">Submit</button>
-                <button type="button" class="btn btn-sm btn-light border border-dark" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-sm btn-light border border-dark tutup" data-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
@@ -301,11 +224,33 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- my script -->
+    <script>
+      $(document).ready(function(){
+        $("#signup").click(function(){
+          $(".modal").toggle();
+          $("#profile-tab").addClass("active");
+          $("#profile .tab-pane").addClass("show active");
+        });
+        $("#signin").click(function(){
+          $(".modal").toggle();
+          $("#home-tab").addClass("active");
+          $("#home .tab-pane").addClass("show active");
+        });
+        $(".tutup").click(function(){
+          $(".modal").hide();
+          $("#profile-tab").removeClass("active");
+          $("#profile .tab-pane").removeClass("show active");
+          $("#home-tab").removeClass("active");
+          $("#home .tab-pane").removeClass("show active");
+        });
+      });
+    </script>
     <script type="text/javascript">
       // When the user scrolls down 500px from the top of the document, show the button
       window.onscroll = function() {scrollFunction()};
