@@ -68,17 +68,26 @@
             </button>
           </div>
           <div class="modal-body">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item">
-                <a class="nav-link" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
+                <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Login</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="registration-tab" data-toggle="tab" href="#registration" role="tab" aria-controls="registration" aria-selected="false">Registration</a>
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Registration</a>
+              </li>
+            </ul> -->
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#profile">Registration</a>
               </li>
             </ul>
           </div>
-          <div class="tab-content" id="myTabContent">
-            <div class="tab-pane show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+          <!-- <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
               <form>
                 <div class="form-group row">
                   <label for="inputEmail3" class="col-sm-4 col-form-label text-right">Username</label>
@@ -99,7 +108,7 @@
                 <button type="button" class="btn btn-sm btn-light border border-dark tutup" data-dismiss="modal">Close</button>
               </div>
             </div>
-            <div class="tab-pane show active" id="registration" role="tabpanel" aria-labelledby="registration-tab">
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
               <form>
                 <div class="form-group row">
                   <label for="inputEmail3" class="col-sm-4 text-right col-form-label">Username</label>
@@ -131,6 +140,66 @@
                 <button type="button" class="btn btn-sm btn-light border border-dark tutup" data-dismiss="modal">Close</button>
               </div>
             </div>
+          </div> -->
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="home" class="container tab-pane active"><br>
+              
+              <form>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-4 col-form-label text-right">Username</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputPassword3" class="col-sm-4 col-form-label text-right">Password</label>
+                  <div class="col-sm-6">
+                    <input type="password" class="form-control" id="inputPassword3">
+                  </div>
+                </div>
+              </form>
+              <div class="modal-footer">
+                <a href="#" class="text-primary font-weight-bold">Click here if you forgot your Password!</a>
+                <button type="button" class="btn btn-sm btn-primary border border-light">Login</button>
+                <button type="button" class="btn btn-sm btn-light border border-dark tutup" data-dismiss="modal">Close</button>
+              </div>
+              
+            </div>
+            <div id="profile" class="container tab-pane fade"><br>
+              
+              <form>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-4 text-right col-form-label">Username</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-4 text-right col-form-label">Email</label>
+                  <div class="col-sm-6">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputPassword3" class="col-sm-4 text-right col-form-label">Password</label>
+                  <div class="col-sm-6">
+                    <input type="password" class="form-control" id="inputPassword3">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputPassword3" class="col-sm-4 text-right col-form-label">Password(again)</label>
+                  <div class="col-sm-6">
+                    <input type="password" class="form-control" id="inputPassword3">
+                  </div>
+                </div>
+              </form>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-primary border border-light">Submit</button>
+                <button type="button" class="btn btn-sm btn-light border border-dark tutup" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
@@ -147,7 +216,7 @@
     <!-- Looking for bootstrap? -->
     <div class="header border-top border-bottom">
       <div class="container">
-        <p><strong class="blue-text">Looking for Bootstrap 2.3.2 docs?</strong> We've moved it to a new login while we push forward with Bootstrap 3. <span class="blue-text">Read the blog</span> for details.</p>
+        <p><strong class="blue-text">Looking for Bootstrap 2.3.2 docs?</strong> We've moved it to a new home while we push forward with Bootstrap 3. <span class="blue-text">Read the blog</span> for details.</p>
       </div>
     </div>
 
@@ -233,23 +302,30 @@
     <script>
       $(document).ready(function(){
         $("#signup").click(function(){
-          $(".modal").show();
-          $("#registration-tab").addClass("active");
-          $("#login .tab-pane").removeClass("show active");
+          $(".modal").toggle();
+          $("#profile-tab").addClass("active");
+          $("#profile .tab-pane").addClass("show active");
         });
         $("#signin").click(function(){
-          $(".modal").show();
-          $("#login-tab").addClass("active");
-          $("#registration .tab-pane").removeClass("show active");
+          $(".modal").toggle();
+          $("#home-tab").addClass("active");
+          $("#home .tab-pane").addClass("show active");
         });
         $(".tutup").click(function(){
           $(".modal").hide();
-          $("#registration-tab").removeClass("active");
-          $("#registration .tab-pane").addClass("show active");
-          $("#login-tab").removeClass("active");
-          $("#login .tab-pane").addClass("show active");
+          $("#profile-tab").removeClass("active");
+          $("#profile .tab-pane").removeClass("show active");
+          $("#home-tab").removeClass("active");
+          $("#home .tab-pane").removeClass("show active");
         });
       });
+    </script>
+    <script>
+    $(document).ready(function(){
+      $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+      });
+    });
     </script>
     <script type="text/javascript">
       // When the user scrolls down 500px from the top of the document, show the button
