@@ -223,8 +223,20 @@
     <!-- Content -->
     <div class="container">
       <div class="row">
-        <div class="col-md-4 col-sm-3">
-          <ul class="nav flex-column rounded left-side">
+        <div class="col-md-3">
+          <div class="nav flex-column nav-pills bg-light rounded py-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link dropdown" id="v-pills-home-tab" data-toggle="collapse" href="#download" role="tab" aria-controls="v-pills-home" aria-selected="true">Download Bootstrap</a>
+            <div class="collapse" id="download">
+              <div class="btn-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Download Options</div>
+              <div class="btn-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Bootstrap CDN</div>
+            </div>
+            <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">What's Included</a>
+            <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Basic Template</a>
+            <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Browser Support</a>
+            <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">License FAQs</a>
+            <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Customizing Bootstrap</a>
+          </div>
+          <!-- <ul class="nav flex-column rounded left-side">
             <li class="nav-item">
               <ul>
                 <li class="border-right"><a class="nav-link active font-weight-bold" href="#">Download Bootstrap</a></li>
@@ -247,25 +259,39 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Customizing Bootstrap</a>
             </li>
-          </ul>
+          </ul> -->
         </div>
-        <div class="col-md-8 col-sm-9">
-          <div class="content-first">
-            <h1>Download Bootstrap</h1>
-            <hr>
-            <p class="lead">There are a few easy ways to quickly get started with Bootstrap, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.</p>
-            <h3>Download compiled CSS and JS</h3>
-            <p class="lead">The fastest way to get started is to get the compiled and minified versions of our CSS and JavaScript. No documentation or original source files are included.</p>
-            <a href="#" class="btn btn-primary btn-lg font-weight-bold">Download Bootstrap</a>
-          </div>
-          <div class="content-two">
-            <h1>Customizing Bootstrap</h1>
-            <hr>
-            <p class="lead">Customizing Bootstrap is best accomplished when you treat it as another dependency in your development stack. Doing so ensures future upgrades are as easy as possible while also familiarizing yourself to the intricacies of the framework</p>
-            <p><small>Once you've downloaded and included Bootstrap's CSS into your templates, you can move on to customizing the included components. To do so, create a new stylesheet (LESS, if you like, or just plain CSS) to house your customizations.</small></p>
-            <div class="border-left">
-              <h5>Compiled or minified?</h5> 
-              <p>Unless you plan on reading a good chunk of the compiled CSS, go with the minified. It's the same code, just compacted. Less bandwidth is good, especially in production environments.</p> 
+        <div class="col-md-9">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">              
+              <div class="content-first">
+                <h1>Download Bootstrap</h1>
+                <hr>
+                <p class="lead">There are a few easy ways to quickly get started with Bootstrap, each one appealing to a different skill level and use case. Read through to see what suits your particular needs.</p>
+                <h3>Download compiled CSS and JS</h3>
+                <p class="lead">The fastest way to get started is to get the compiled and minified versions of our CSS and JavaScript. No documentation or original source files are included.</p>
+                <a href="#" class="btn btn-primary btn-lg font-weight-bold">Download Bootstrap</a>
+              </div>
+              <div class="content-two">
+                <h1>Customizing Bootstrap</h1>
+                <hr>
+                <p class="lead">Customizing Bootstrap is best accomplished when you treat it as another dependency in your development stack. Doing so ensures future upgrades are as easy as possible while also familiarizing yourself to the intricacies of the framework</p>
+                <p><small>Once you've downloaded and included Bootstrap's CSS into your templates, you can move on to customizing the included components. To do so, create a new stylesheet (LESS, if you like, or just plain CSS) to house your customizations.</small></p>
+                <div class="border-left">
+                  <h5>Compiled or minified?</h5> 
+                  <p>Unless you plan on reading a good chunk of the compiled CSS, go with the minified. It's the same code, just compacted. Less bandwidth is good, especially in production environments.</p> 
+                </div>
+                <button type="button" class="btn btn-primary" id="myBtn">Show Toast</button>
+
+                  <div class="toast mt-3" style="position: absolute; top: 100; right: 0;">
+                    <div class="toast-header">
+                      Toast Header
+                    </div>
+                    <div class="toast-body">
+                      Some text inside the toast body
+                    </div>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
@@ -288,7 +314,7 @@
     </div>
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-light back-to-top" id="myBtn" onclick="topFunction()">Back to top</a>
+    <a href="#" class="btn btn-light back-to-top" id="myBtng" onclick="topFunction()">Back to top</a>
     
 
     <!-- Optional JavaScript -->
@@ -325,6 +351,11 @@
       $(".nav-tabs a").click(function(){
         $(this).tab('show');
       });
+
+      $("#myBtn").click(function(){
+        $('.toast').toast({delay: 10000});
+        $('.toast').toast('show');
+      });
     });
     </script>
     <script type="text/javascript">
@@ -333,9 +364,9 @@
 
       function scrollFunction() {
         if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-          document.getElementById("myBtn").style.display = "block";
+          document.getElementById("myBtng").style.display = "block";
         } else {
-          document.getElementById("myBtn").style.display = "none";
+          document.getElementById("myBtng").style.display = "none";
         }
       }
 
@@ -347,3 +378,4 @@
     </script>
   </body>
 </html>
+
