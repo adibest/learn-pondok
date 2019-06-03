@@ -1,0 +1,17 @@
+header {
+
+}
+.bg-purple {
+	background-color: #666686;
+}
+.text-grey {
+	color: #838383;
+}
+.elegant {
+	height: 800px;
+}
+.landing {
+	height: 800px;
+	max-width: 600px;
+	text-align: center;
+}
