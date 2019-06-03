@@ -12,6 +12,72 @@ header {
 }
 .landing {
 	height: 800px;
+	max-width: 900px;
+	text-align: center;
+	padding-top: 250px;
+}
+
+.jumbotron {
+	margin-bottom: 0px;
+}
+
+/*css main-1*/
+.main-1 {
+	margin-top: 160px;
+}
+.main-1 h1 {
+	width: 400px;
+	margin-bottom: 80px;
+}
+.main-1 p {
+	margin-bottom: 50px;
+}
+.main-1 .p2 {
+	margin-bottom: 75px;
+}
+
+/*css main-2*/
+.main-2 {
+	background-color: #666666;
+	padding-top: 275px;
+	padding-bottom: 275px;
+}
+.main-2 .container {
 	max-width: 600px;
 	text-align: center;
+}
+
+/*css main-3*/
+.main-3 .display-6 {
+	width: 800px;
+	text-align: center;
+}
+.main-3 #carouselExampleControls {
+	margin-top: 70px;
+	margin-bottom: 60px;
+}
+.main-3 .container p {
+	margin-bottom: 45px;
+}
+
+/*css main-4*/
+.main-4 {
+	background-color: #838383;
+}
+
+/*css main-5*/
+.main-5 {
+	background-color: #333333;
+	padding-top: 210px;
+	padding-bottom: 115px;
+	text-align: center;
+}
+
+footer {
+	padding-top: 75px;
+	padding-bottom: 71px;
+	background-color: #2c2c2c;
+}
+footer a {
+	color: #525252;
 }
