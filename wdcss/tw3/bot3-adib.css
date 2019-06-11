@@ -143,3 +143,31 @@ footer a {
 .mp {
 	font-family: Myriad Pro;
 }
+
+@media only screen and (max-width: 480px) {
+	header .display-3 {
+		font-size: 54px;
+	}
+	.main-1 h1 {
+		text-align: center;
+	}
+	.main-3 .display-6 {
+		width: 300px;
+		font-size: 36px;
+	}
+	.carousel-control-prev {
+		margin-left: 15px;
+	}
+	.carousel-control-next {
+		margin-right: 15px;
+	}
+	.img-1 {
+		display: none;
+	}
+	.img-2 {
+		display: block!important;
+	}
+	.nav-3 {
+		display: none;
+	}
+}
