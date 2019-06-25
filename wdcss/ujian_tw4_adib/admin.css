@@ -1,0 +1,67 @@
+body {
+	max-width: 1280px;
+	min-width: 100%;
+}
+.navbar-left {
+	flex-grow: 1;
+}
+
+header .row {
+	height: 80px!important;
+}
+
+.content .main {
+	height: 800px;
+}
+
+.image-circle {
+	height: 60px; 
+	width: 60px;
+	background-color: #F2F2F2; 
+	border-radius: 30px;
+	margin-right: auto!important;
+	margin-left: auto!important;
+}
+.image-pondok {
+	height: 60px;
+	width: 80px;
+	background-color: #2f7b4c;
+	margin: 10px 25px;
+}
+
+.label {
+	width: 30px;
+	border-radius: 10px;
+}
+.bg-blue {
+	background-color: black;
+}
+.bg-content {
+	background-color: #eceef2!important;
+}
+.bg-sidebar {
+	background-color: #2f3b4c;
+}
+.bg-white {
+	background-color: #ffffff;
+}
+hr {
+	color: #555f72!important;
+}
+.font-side {
+	color: #b0beca;
+}
+.user-panel {
+	margin-right: auto;
+	margin-left: auto;
+	padding: 40px 35px;
+}
+.user-panel p {
+	margin-bottom: 0px!important;
+	color: #ffffff;
+}
+
+.nav-pills .nav-link .active {
+	background-color: #2a3344!important;
+	color: #b0beca!important;
+}
